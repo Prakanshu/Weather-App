@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="myapp" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>
+    <script src="../application.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../controller/WeatherController.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+</head>
+
+<body class="index_body">
+<h1 class="title">Weather App</h1>
+<div id="weather" ng-controller="WeatherController">
+<form class="weatherform" ng-submit="getDetails()"  >
+<div class="form-group"><input class="form-control" id="inputdefault" type="text" ng-model="city" placeholder="Search....."></div>
+    <button type="submit" class="btn btn-success">Submit</button></br>
+
+
+
+</br>
+    <div ng-show="result">
+
+
+        <table class="table">
+
+
+            <tr style="border: hidden">
+
+                <td class="td-head">{{result.display_location.full}}</td>
+            </tr>
+            <tr style="border: hidden">
+               <div><td class="td-head"><p style="font-size: 20px;margin-bottom:0px">{{result.temperature_string}}&nbsp;&nbsp; <img src="{{result.icon_url}}"></p>
+              <p style="font-size:12px;margin-bottom:0px">Feels like {{result.feelslike_c}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{result.weather}}</p>
+               </td>
+               </div>
+            </tr>
+            <tr style="border: hidden">
+                <td class="td-head"></td>
+            </tr>
+
+
+
+        </table>
+    </div>
+    
+
+
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+.index_body{
+    background-image:url("../images/weather_background.jpeg");
+    background-repeat:repeat-x;
+
+}
+
+.form-group {
+    width: 220px;
+    margin-left: 40%;
+
+}
+
+.table
+{
+    border:transparent;
+    width:45%;
+    margin-left:40%;
+
+
+}
+.table >.tbody
+{
+  border: transparent;
+}
+td:nth-child(2) { width: 100%; }
+.td-head
+{
+
+    border-color: inherit;
+    font-size: 25px;
+    margin-left:45% ;
+    text-align:inherit;
+
+}
+.title
+{
+    margin-left: 40%;
+    color: #ff8749;
+}
+
+.btn.btn-success
+{
+    margin-left: 45%;
+}
