@@ -6,3 +6,5 @@ https://api.wunderground.com/api/
 
 Kindly register and generate your api key prior using this app.
 Once api key generated , you need to assign you key to var apiKey="your_key" in application.js(resides in public/application.js).
+
+Starting point:- node app
